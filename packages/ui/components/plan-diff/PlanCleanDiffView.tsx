@@ -462,7 +462,7 @@ const headingStyleFor = (level: number): string =>
   HEADING_STYLE_BY_LEVEL[level] || HEADING_STYLE_FALLBACK;
 
 const PARAGRAPH_CLASS = "mb-4 leading-relaxed text-foreground/90 text-[15px]";
-const LIST_ITEM_ROW_CLASS = "flex gap-3 my-1.5";
+const LIST_ITEM_ROW_CLASS = "flex items-start gap-3 my-1.5";
 const listItemIndentRem = (level: number): string => `${level * 1.25}rem`;
 const listItemTextClass = (isCheckbox: boolean, checked?: boolean): string =>
   `text-sm leading-relaxed ${isCheckbox && checked ? "text-muted-foreground line-through" : "text-foreground/90"}`;
